@@ -8,9 +8,9 @@
 #### HBOS
 * **detection.py**, calcualte the HBOS score for each residue of proteins in a folder
 
-* Used to identify the potential anomalous residue in proteins
+	*Used to identify the potential anomalous residue in proteins*
 
-* Each row in the output csv file contains: protein id, chain id, residue index, residue name, d-sidechain, d-block, phi, psi, chi-1, HBOS of d-sidechain, HBOS of d-block, HBOS of phi, HBOS of psi, HBOS of chi-1
+	*Each row in the output csv file contains: protein id, chain id, residue index, residue name, d-sidechain, d-block, phi, psi, chi-1, HBOS of d-sidechain, HBOS of d-block, HBOS of phi, HBOS of psi, HBOS of chi-1*
 
 	> python -W ignore HBOS/detection.py datasetFolder Analysis
 
