@@ -39,10 +39,12 @@
 * <font color = "red">count.py and countResidue.py</font>, count residue numbers in a dataset for different types of residues
 
 	> python -W ignore count.py cifFolder
+	
 	> python countResidue.py count.csv, "count.csv" is the output of "count.py"
 
 * <font color = "red">DSSP.py and DSSPResidue.py</font>, check the identify of secondary structure (Helix, Sheet, et. al.) for each residue labelled by HBOS score
 	> python DSSP.py detection.py, "detection.py" is the output of "detection.py"
+	
 	> python DSSPResidue.py dssp.csv, "dssp.csv" is the output of "DSSP.py"
 
 #### Analysis
