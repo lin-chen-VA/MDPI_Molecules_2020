@@ -6,7 +6,7 @@
 <p style = "text-align:center;"><img src = "img/MDPI_Molecules_Summary.png" width = "80%"></p>
 
 #### HBOS
-* <font color="red">detection.py</font>, calcualte the HBOS score for each residue of proteins in a folder
+* **detection.py**, calcualte the HBOS score for each residue of proteins in a folder
 
 * Used to identify the potential anomalous residue in proteins
 
@@ -14,7 +14,7 @@
 
 	> python -W ignore HBOS/detection.py datasetFolder Analysis
 
-* <font color="red">NCSAnomaly.py</font>, calcualte the HBOS score for each residue of proteins in a folder
+* **NCSAnomaly.py**, calcualte the HBOS score for each residue of proteins in a folder
 
 * Used to generate the reference
 
@@ -24,7 +24,7 @@
 
 	> python -W ignore HBOS/NCSAnomaly.py datasetFolder Analysis
 
-* <font color = "red">resolution.py</font>, download cif files by resolution
+* **resolution.py**, download cif files by resolution
 
 * Download cif files by release time with RCSB search engine, save them into a download folder
 
@@ -32,17 +32,17 @@
 
 	> python HBOS/resolution.py cifFolder targetFolder
 
-* <font color = "red">labelling.py</font>, check the label in validation reports for each residue labelled by HBOS score with meta data in the corresponding xml files
+* **labelling.py**, check the label in validation reports for each residue labelled by HBOS score with meta data in the corresponding xml files
 
 	> python HBOS/labelling.py detection.cvs, "detection.cvs" is the output of "detection.py"
 
-* <font color = "red">count.py and countResidue.py</font>, count residue numbers in a dataset for different types of residues
+* **count.py and countResidue.py**, count residue numbers in a dataset for different types of residues
 
 	> python -W ignore count.py cifFolder
 	
 	> python countResidue.py count.csv, "count.csv" is the output of "count.py"
 
-* <font color = "red">DSSP.py and DSSPResidue.py</font>, check the identify of secondary structure (Helix, Sheet, et. al.) for each residue labelled by HBOS score
+* **DSSP.py and DSSPResidue.py**, check the identify of secondary structure (Helix, Sheet, et. al.) for each residue labelled by HBOS score
 	> python DSSP.py detection.py, "detection.py" is the output of "detection.py"
 	
 	> python DSSPResidue.py dssp.csv, "dssp.csv" is the output of "DSSP.py"
