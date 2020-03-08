@@ -131,6 +131,6 @@ def main():
 
 if __name__ == '__main__':
     """Identify the SSE for each detected anomalous residue
-       >>>python detection.csv
+       >>>python DSSP.py detection.csv
     """
     main()

@@ -80,8 +80,8 @@ def get_files(directory):
 
 import sys
 def main():
-    source_folder = '/Users/lchen/Downloads/EM_2019/'
-    target_folder = "temp"
+    source_folder = sys.argv[1] # cif file folder
+    target_folder = sys.argv[2] # output folder
     files = get_files(source_folder)
     for f in files:
         name = f[:4]
@@ -96,8 +96,8 @@ def main():
 
         resolution = get_resolution(xmlname)
 
-        low_limit = 4
-        up_limit = 6
+        low_limit = 0 # lower boundary of the download resolution
+        up_limit = 4 # upper boundary of the download resolution
 
         if low_limit <= resolution < up_limit:
             shutil.move(join(source_folder, f), join(target_folder, f))

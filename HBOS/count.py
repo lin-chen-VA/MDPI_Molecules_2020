@@ -859,7 +859,7 @@ def main():
 
 if __name__ == '__main__':
     ''' Generate the score for each residue
-    	python -W anomaly.py cifFolder Analysis
+    	python -W count.py cifFolder
     '''
     main(); # check the targeted residues only
 
