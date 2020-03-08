@@ -16,19 +16,19 @@
 
 * **NCSAnomaly.py**, calcualte the HBOS score for each residue of proteins in a folder
 
-* Used to generate the reference
+	*Used to generate the reference*
 
-* Considering NCS byremoving the chains having 95% similarity or above with any other chains in the same protein
+	*Considering NCS byremoving the chains having 95% similarity or above with any other chains in the same protein*
 
-* Each row in the output csv file contains: protein id, chain id, residue index, residue name, d-sidechain, d-block, phi, psi, chi-1, HBOS of d-sidechain, HBOS of d-block, HBOS of phi, HBOS of psi, HBOS of chi-1
+	*Each row in the output csv file contains: protein id, chain id, residue index, residue name, d-sidechain, d-block, phi, psi, chi-1, HBOS of d-sidechain, HBOS of d-block, HBOS of phi, HBOS of psi, HBOS of chi-1*
 
 	> python -W ignore HBOS/NCSAnomaly.py datasetFolder Analysis
 
 * **resolution.py**, download cif files by resolution
 
-* Download cif files by release time with RCSB search engine, save them into a download folder
+	*Download cif files by release time with RCSB search engine, save them into a download folder*
 
-* Use resolution.py to select the cif files downloaded within the specified resolution range by meta data in the corresponding xml files, default range is 0 to 4 angstrom
+	*Use resolution.py to select the cif files downloaded within the specified resolution range by meta data in the corresponding xml files, default range is 0 to 4 angstrom*
 
 	> python HBOS/resolution.py cifFolder targetFolder
 
