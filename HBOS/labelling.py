@@ -171,8 +171,11 @@ def main():
 
         for ele in csvdict[proteinID]:
             key = (ele[0], ele[1], ele[2]) # chain ID, index, residue name
-            label = xmldict[key]
-            label_list.append(label)
+            if key in xmldict:
+                label = xmldict[key]
+                label_list.append(label)
+            else:
+                label_list.append('Unknown')
 
         result_list += label_list
 
